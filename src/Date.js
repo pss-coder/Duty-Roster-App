@@ -11,8 +11,8 @@ var weekNumber = today.weekNumber
 
 // Week range
 // NOTE: ASSUMES - MONDAY IS START DAY
-var startDateWeek =  today.startOf('week').toISODate()
-var endDateWeek = today.endOf('week').toISODate()
+var startDateWeek =  today.startOf('week').toLocaleString(DateTime.DATE_MED)
+var endDateWeek = today.endOf('week').toLocaleString(DateTime.DATE_MED)
 
 const WeekInfo = {
     today: today,
@@ -37,8 +37,8 @@ export function getWeekByWeekNumber(weekNumber) {
 
     return {
         weekNumber: weekNumber,
-        startDateWeek: dt.startOf('week').toISODate(),
-        endDateWeek: dt.endOf('week').toISODate()
+        startDateWeek: dt.startOf('week').toLocaleString(DateTime.DATE_MED),
+        endDateWeek: dt.endOf('week').toLocaleString(DateTime.DATE_MED)
     }
 }
 

@@ -43,7 +43,6 @@ function Roster() {
   const [weekView, setWeekView] = useState(thisWeekData)
 
   function RenderNextWeekRoster() {
-    //TODO: UPDATE WEEK VIEW ALSO
     thisWeekData.weekNumber = thisWeekData.weekNumber + 1;
     
     setWeekView(getWeekByWeekNumber(thisWeekData.weekNumber))
@@ -57,8 +56,10 @@ function Roster() {
     <MDBRow>
       <MDBCol>
       {/* Header */}
-        <h1>Week {weekView.weekNumber}: {weekView.startDateWeek} -- {weekView.endDateWeek}</h1>
-        <p>Rooms assigned: {rooms.join(", ")}</p>
+        <h1>Week {weekView.weekNumber}: {weekView.startDateWeek} to {weekView.endDateWeek}</h1>
+        <p>Rooms assigned in corridor: {rooms.join(", ")}</p>
+        <hr></hr>
+        <p>Settings coming soon</p>
         <button>Settings</button>
         <hr></hr>
       {/* Roster Table View */}
