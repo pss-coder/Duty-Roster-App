@@ -9,7 +9,7 @@ import {getWeekByWeekNumber, getThisWeekInfo} from "../Date";
 var originalstartWeek = 34
 const thisWeekData = getThisWeekInfo()
 
-const rooms = [1201,1202,1203, 1205, 1206, 1208, 1209, 1210, 1211]
+const rooms = [1201,1202,1203, 1206, 1207, 1208, 1209, 1210, 1211,1212]
 
 function Roster() {
   const [weekView, setWeekView] = useState(thisWeekData)

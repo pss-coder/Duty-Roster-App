@@ -11,8 +11,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router >
   <Routes>
-          <Route path="/roster" element={<Roster />} />
-          <Route path="/" element={<App />} />
+          <Route path="/" element={<Roster />} />
+          {/* <Route path="/" element={<App />} /> */}
     </Routes>
   </Router>
 );
